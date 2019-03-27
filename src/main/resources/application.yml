@@ -1,9 +1,9 @@
 ---
 micronaut:
-    application:
-        name: test-app
+  application:
+    name: test-app
 jackson:
-    module-scan: false
+  module-scan: false
 ---
 micronaut:
   server:
@@ -13,7 +13,7 @@ micronaut:
       configurations:
         all:
           allowedOrigins:
-            - "http://localhost:3000"
+          - "http://localhost:3000"
   security:
     enabled: false
     endpoints:
@@ -27,6 +27,6 @@ micronaut:
         signatures:
           secret:
             generator:
-              secret: "${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}"
+              secret: "${JWT_GENERATOR_SIGNATUzRE_SECRET:pleaseChangeThisSecretForANewOne}"
 bearer:
   public: publicToken
