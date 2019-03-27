@@ -6,8 +6,16 @@ jackson:
     module-scan: false
 ---
 micronaut:
+  server:
+    port: 8123
+    cors:
+      enabled: true
+      configurations:
+        all:
+          allowedOrigins:
+            - "http://localhost:3000"
   security:
-    enabled: true
+    enabled: false
     endpoints:
       login:
         enabled: true
